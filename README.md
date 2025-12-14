@@ -9,7 +9,7 @@ La solución está construida con tecnologías modernas del ecosistema React, pr
 ## 🚀 Demo
 
 🔗 **URL del proyecto (deploy en Vercel):**  
-> https://TU-URL-DE-VERCEL.vercel.app
+> https://derma-plus-neon.vercel.app/
 
 ---
 
