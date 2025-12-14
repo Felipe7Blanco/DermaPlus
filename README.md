@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 DermaPlus – Prueba Técnica Frontend
 
-## Getting Started
+Proyecto desarrollado como **prueba técnica** simulando un caso real para una clínica estética llamada **DermaPlus**, enfocada en la captación de clientes y el seguimiento interno mediante un panel administrativo.
 
-First, run the development server:
+La solución está construida con tecnologías modernas del ecosistema React, priorizando **claridad, estructura, diseño y correcta ejecución de requerimientos funcionales**, sin uso de plantillas externas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Demo
+
+🔗 **URL del proyecto (deploy en Vercel):**  
+> https://TU-URL-DE-VERCEL.vercel.app
+
+---
+
+## 🎯 Objetivo del proyecto
+
+- Simular una **landing page real** para captación de leads.
+- Proveer un **dashboard interno** para el personal de la clínica.
+- Visualizar información clave mediante **gráficas estadísticas**.
+- Demostrar capacidad de estructurar un proyecto frontend moderno, claro y escalable.
+
+---
+
+## 🧩 Funcionalidades
+
+### Landing Page
+- Hero con propuesta de valor clara.
+- Sección de servicios (mock data).
+- Formulario de registro de pacientes con:
+  - Nombre
+  - Email
+  - Teléfono
+  - Tratamiento de interés
+- Mensaje de confirmación al enviar el formulario (sin backend real).
+
+### Página de Contacto
+- Formulario de contacto.
+- Información ficticia de la clínica:
+  - Dirección
+  - Teléfono
+  - Horarios de atención
+- Diseño coherente con la landing page.
+
+### Dashboard (Área interna)
+- Vista tipo panel administrativo.
+- Tabla de leads (datos simulados).
+- Gráficas estadísticas:
+  - Pacientes registrados por mes.
+  - Tratamientos más solicitados.
+  - Canales de captación.
+
+---
+
+## 📊 Datos utilizados (Mock Data)
+
+### Pacientes registrados por mes
+
+| Mes     | Cantidad |
+|--------|----------|
+| Enero  | 95       |
+| Febrero| 140      |
+| Marzo  | 210      |
+| Abril  | 260      |
+| Mayo   | 330      |
+
+### Tratamientos más solicitados
+- Limpieza facial: 40%
+- Botox: 25%
+- Depilación láser: 20%
+- Tratamientos corporales: 15%
+
+### Canales de captación
+- Web: 50%
+- Instagram Ads: 30%
+- Referidos: 20%
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Chakra UI** (UI y layout)
+- **React ECharts** (visualización de datos)
+- **lucide-react** (iconografía)
+- **Yarn** (gestor de dependencias)
+- **Vercel** (deploy)
+
+---
+
+## 🗂️ Estructura del proyecto
+
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── contact/
+│   │   └── page.tsx
+│   └── dashboard/
+│       └── page.tsx
+├── components/
+│   ├── Dashboard/
+│   │   ├── LeadsTable.tsx
+│   │   └── charts/
+│   │       ├── PatientsByMonthChart.tsx
+│   │       ├── TreatmentsChart.tsx
+│   │       └── ChannelsChart.tsx
+│   └── ui/
+└── styles/
 ```
+## 🧠 Consideraciones técnicas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El proyecto no incluye backend, pero está diseñado para integrarse fácilmente con una API REST.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Se priorizó una arquitectura modular, separación de responsabilidades y componentes reutilizables.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Todos los datos son simulados, según lo solicitado en la prueba técnica.
 
-## Learn More
+## 📦 Instalación y ejecución local
+``` bash
+# Instalar dependencias
+yarn install
 
-To learn more about Next.js, take a look at the following resources:
+# Ejecutar entorno de desarrollo
+yarn dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build de producción
+yarn build
+```
+## 📌 Estado del proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✔ Prueba técnica completada
+✔ Requerimientos funcionales cumplidos
+✔ Deploy en Vercel
 
-## Deploy on Vercel
+## 👤 Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Andrés Blanco
+Ingeniero de Sistemas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: https://github.com/Felipe7Blanco 
+
+LinkedIn: https://www.linkedin.com/in/andr%C3%A9s-blanco-366021367/
